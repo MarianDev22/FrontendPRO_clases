@@ -5,12 +5,17 @@
 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "clean": "rimraf dist",
+    "build:test": "parcel build src/index.html",
+    "build:prod":"npm run clean && parcel build --no-source-mpas src/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "parcel": "^2.16.1"
-  }
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }

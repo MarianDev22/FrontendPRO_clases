@@ -1,21 +1,28 @@
 {
-  "name": "frontendpro_clases",
+  "name": "frontend-pro",
   "version": "1.0.0",
   "description": "",
-
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
     "clean": "rimraf dist",
     "build:test": "parcel build src/index.html",
-    "build:prod":"npm run clean && parcel build --no-source-mpas src/index.html"
+    "build:prod": "npm run clean && parcel build --no-source-maps src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeepCodingWeb19/frontend-pro.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
+  "bugs": {
+    "url": "https://github.com/KeepCodingWeb19/frontend-pro/issues"
+  },
+  "homepage": "https://github.com/KeepCodingWeb19/frontend-pro#readme",
   "devDependencies": {
-    "parcel": "^2.16.1"
+    "parcel": "^2.16.1",
+    "rimraf": "^6.1.2"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }

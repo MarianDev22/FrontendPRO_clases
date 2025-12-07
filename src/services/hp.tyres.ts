@@ -37,3 +37,5 @@ export interface HPCharacter {
     alive: boolean;
     image: string;
 };
+
+
